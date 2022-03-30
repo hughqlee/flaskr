@@ -1,0 +1,60 @@
+/* CSS는 이게 주석! 세미콜론(;)없으면 스타일이 안먹는다. 주의! */
+
+html {
+    font-family: sans-serif;
+    background: #eee;
+    padding: 1rem;
+} /* HTML내 <html>와 </html> (이하 'html 태그' 식으로 쓸 것.) 사이에 적용. (전체에 적용된다 보면 된다.) 폰트를 산스세리프, 배경색을 #eee컬러, 패딩(테두리 안쪽 여백)을 1rem. */
+
+body {
+    max-width: 960px;
+    margin: 0, auto;
+    background: white;
+} /* body 태그에 적용. 최대 너비를 960px, 마진(테두리 바깥쪽 여백)을 좌우 0 위아래 auto, 배경색을 하얀색. */
+
+h1 {
+    font-family: serif;
+    color: #377ba8;
+    margin: 1rem 0;
+} /* h1 태그에 적용. 폰트는 세리프, 글자색은 #377ba8컬러, 마진을 좌우 1rem  위아래 0. */
+
+a {
+    color: #377ba8
+}
+
+nav {
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+} /* 보기(정렬) 방식을 플렉스로 지정하고 중앙 정렬. flex에 대해서는 다음에 자세히 다룰 예정. */
+
+nav h1 {
+    flex: auto;
+    margin: 0;
+}  /* nav 태그에 포함된 h1 태그에 적용 */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    padding: 0 1rem 1rem;
+} /* class='content'인 태그에 적용, id='content'였으면 #content로 써야 한다. ('.'대신 '#') */
+
+.content > header {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: flex-end;
+} /* content 클래스 내 (직속)자식 header 태그에 적용. 저 부등호 유무의 차이는 소속 탭을 1회만 인정한다는 것. */
+
+.flash {
+    margin: 1em 0;
+    padding: 1em;
+    background: #cae6f6;
+    border: 1px solid #377ba8;
+}
