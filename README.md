@@ -5,6 +5,7 @@
 - [x] Python, Flask로 라우트 (HTML 연결)
 
 ## 2.본격적인 시작
-- [ ] DB (SQLite) 연결
-- [ ] 템플릿 활용
+- [x] DB (SQLite) 연결
+- [x] auth 구현
+- [ ] blog 구현
 - [ ] 테스트 및 배포

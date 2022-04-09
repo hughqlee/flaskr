@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask, render_template # flask 프레임워크에서 Flask 클래스, render_template 함수를 불러온다 (쓰려고).
-from . import db
+from . import db, auth
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -25,5 +25,6 @@ def create_app(test_config=None):
         return render_template('index.html') # index.html을 렌더링 한다 (불러와 화면에 깐다).
 
     db.init_app(app)
+    app.register_blueprint(auth.bp)
 
     return app
